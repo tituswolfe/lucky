@@ -3,6 +3,7 @@ package xyz.tituswolfe.lucky.core;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -70,7 +71,7 @@ public class Deck {
     );
 
     public void reset() {
-        cards = FULL_DECK;
+        cards = new ArrayList<>(FULL_DECK);
     }
 
     public void shuffle() {
