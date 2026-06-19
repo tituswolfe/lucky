@@ -78,7 +78,7 @@ public class Deck {
         Collections.shuffle(cards);
     }
 
-    public Card drawCard() {
+    public Card draw() {
         Card card = cards.getFirst();
         cards.removeFirst();
         return card;
